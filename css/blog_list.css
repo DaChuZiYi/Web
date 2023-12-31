@@ -1,6 +1,6 @@
 /* 这个文件中专门写和博客列表页相关的样式 */
 .blog{
-    width: 100%;
+    width: 80%;
     /* 高度如果不设置, 就取决于里面的内容高度的综合 */
     padding: 20px;
 }
@@ -14,7 +14,7 @@
 
 .blog .date{
     text-align: center;
-    color: rgb(231, 24, 186);
+    color: hsl(32, 84%, 52%);
     padding: 10px 0;
 }
 
