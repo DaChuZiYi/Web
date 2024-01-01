@@ -10,6 +10,8 @@
     <title>主页</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/blog_list.css">
+    <script src="./marked-master/bin/marked.js"></script>
+    <script src="./js/markdown.js"></script>
 </head>
 
 <body>
@@ -46,9 +48,17 @@
         <div class="right">
             <!-- .blog就对应表示一个博客 -->
             <div class="blog">
-                <div id="markdown-container">
-                    <iframe src="md_list.txt" width="100%" height="500px"></iframe>
-                </div>
+                <!-- 在这里硬编码指定的 Markdown 文件路径 -->
+                <script>
+                    const markdownPath = "./markdown/FRG插件指南v1.575.md"; // 替换为你的Markdown文件路径
+
+                    // 在页面加载完成后调用加载和渲染函数
+                    document.addEventListener('DOMContentLoaded', function () {
+                        loadAndRenderMarkdown(markdownPath);
+                    });
+                </script>
+
+                <div id="markdownContent"></div>
             </div>
 
             <div class="blog">
