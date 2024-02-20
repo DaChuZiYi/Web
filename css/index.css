@@ -1,0 +1,26 @@
+h1 {
+    color: red;
+}
+
+p {
+    color: green;
+    /* 自动换行 */
+    word-wrap: break-word;
+    /* 或者使用 white-space: pre-wrap; */
+}
+
+li {
+    list-style-type: square;
+}
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: green;
+}
+
+li em {
+    color: rebeccapurple;
+}
