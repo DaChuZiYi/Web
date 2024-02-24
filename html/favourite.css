@@ -1,0 +1,20 @@
+dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+dt,
+dd {
+    margin: 10xp;
+    padding: 1em;
+}
+
+dt {
+    flex-basis: 100%;
+    /* 根据需要调整宽度 */
+}
+
+dd {
+    flex-basis: 100%;
+    /* 根据需要调整宽度 */
+}
